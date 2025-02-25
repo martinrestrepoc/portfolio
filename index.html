@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about-me" class="active">About Me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#hobbies">Hobbies</a></li>
+                <li class="nav-item"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--ABOUT ME-->
+    <section id="about-me" class="about-container">
+        <aside>
+            <img src="./img/0DE7B20B-A64A-4EAF-A702-FB450DDD7DAB_1_105_c.jpeg" class="aside-image" alt="Foto de Martin">
+            <h1>Hi, I'm Martin Restrepo</h1>
+            <p>Engineering student at Universidad EIA, trying to learn everything about computers</p>
+        </aside>
+
+               
+                <div class="bio-box">
+                    <p>
+                        I studied at the Colegio San Ignacio de Loyola, where I graduated in 2023. I am currently studying at 
+                        the Universidad EIA, where I am in the 3rd semester of Systems Engineering. I am passionate about technology 
+                        and I am always looking to learn new things. I am currently learning about web development and I am interested 
+                        in learning about artificial intelligence and machine learning.
+                    </p>
+                </div>
+        
+
+        <main>
+            <article>
+                <img src="./img/BE4CCDCE-053B-4FA3-B38B-D760D1FAFEA4_1_105_c.jpeg" class="main-image" alt="Imagen 1">
+                <p>I am pretty active, I love sports and doing things all the time, I hate wasting time and love productivity.</p>
+            </article>
+            <article>
+                <img src="./img/710555C6-5607-42BD-808B-E14C61004856_1_201_a.jpeg" class="main-image" alt="Imagen 2">
+                <p>I am very close to my family, I love spending time with them and creating memories together.</p>
+            </article>
+            <article>
+                <img src="./img/B2C0A294-80F9-4368-9BEF-1C8B50CA2DAA_1_105_c.jpeg" class="main-image" alt="Imagen 3">
+                <p>I love traveling, meeting new places, cultures, people and tasting new things, I find it very interesting to see
+                    how different you can be by growing up in different places.
+                </p>
+            </article>
+            <article>
+                <img src="./img/BC03FD98-D8E6-49BA-923F-4056CD7130C7_1_105_c.jpeg" class="main-image" alt="Imagen 4">
+                <p>I am very friendly and always willing to establish new realtionship, sharing new ideas 
+                    and getting to know new things</p>
+            </article>
+        </main>
+    </section>
+
+
+<!--PROJECTS-->
+<section id="projects" class="projects-container">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+        <div class="project-text">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>
+                A personal portfolio website to showcase my projects, built using HTML, CSS, and JavaScript.
+                This project helped me practice web design principles and responsive layouts.
+            </p>
+        </div>
+        <div class="project-image">
+            <img src="./img/html-css-js.png" alt="Portfolio Website">
+        </div>
+    </div>
+
+    <div class="project-item reverse">
+        <div class="project-image">
+            <img src="./img/Screenshot 2025-02-14 at 9.48.02 AM.png" alt="To-Do List App">
+        </div>
+        <div class="project-text">
+            <h3>Project 2: To-Do List App</h3>
+            <p>
+                A simple to-do list application developed using JavaScript, allowing users to add, delete, and mark tasks as completed.
+                It features a minimalistic design with a focus on functionality.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--HOBBIES-->
+     <section id="hobbies" class="hobbies-container">
+        <h2>Hobbies</h2>
+    
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <img src="./img/26F21910-D56E-4015-AF81-7D746FDA6F57_1_105_c.jpeg" alt="Hobby 1">
+                <h3>Football</h3>
+                <p>I love watching and playing football, I am always up to date with the results and I am a DIM big fan.</p>
+            </div>
+    
+            <div class="hobby-item">
+                <img src="./img/324DFA4F-C714-4B7C-B67F-615ECF80587A_1_105_c.jpeg" alt="Hobby 2">
+                <h3>Swimming</h3>
+                <p>I love playing strategy and adventure games that challenge my mind.</p>
+            </div>
+    
+            <div class="hobby-item">
+                <img src="./img/16B35AC1-A36D-42A8-80AE-B957EEADF63C_1_105_c.jpeg" alt="Hobby 3">
+                <h3>Traveling</h3>
+                <p>In my free time, I enjoy building personal coding projects to learn new skills.</p>
+            </div>
+    
+            <div class="hobby-item">
+                <img src="./img/Screenshot 2025-02-13 at 8.56.19 PM.png" alt="Hobby 4">
+                <h3>Podcasts</h3>
+                <p>I love reading books, especially about technology, science, and personal growth.</p>
+            </div>
+        </div>
+    </section>
+
+    
+<!--CONTACT ME-->
+
+<script src="./script.js"></script>
+
+<section id="contact" class="contact-container">
+    <h2>Contact Me</h2>
+
+    <div class="contact-items">
+
+        <!-- Correo -->
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p id="email">martin.restrepo32@eia.edu.co</p>
+            <button class="copy-btn" onclick="copyToClipboard('#email')">Copy</button>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="contact-item">
+            <h3>Phone</h3>
+            <p id="phone">+57 3184336095</p>
+            <button class="copy-btn" onclick="copyToClipboard('#phone')">Copy</button>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-item">
+            <h3>GitHub</h3>
+            <a href="https://github.com/martinrestrepoc" target="_blank">Visit my GitHub</a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/martin-restrepo-coral" target="_blank">Visit my LinkedIn</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>&copy; Made by Martin Restrepo</p>
+    </footer>
+</body>
+</html>
