@@ -2,7 +2,7 @@
 
 This is my personal portfolio built with **HTML, CSS, and JavaScript**. It showcases my projects, hobbies, and ways to contact me.
 
-You can view the live version here  [https://martinrestrepoc.github.io/portfolio/](https://martinrestrepoc.github.io/portfolio/)
+You can view the live version here  [https://github.com/martinrestrepoc/portfolio]((https://github.com/martinrestrepoc/portfolio))
 
 ---
 
