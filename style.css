@@ -110,7 +110,7 @@ header {
 }
 
 
-/* Proyectos dentro de About Me */
+/* Objetos dentro de About Me */
 #about-me main {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +143,7 @@ header {
 }
 
 /* ========================
-   FOOTER (Común para todas las páginas)
+   FOOTER 
    ======================== */
 footer {
     display: flex;
@@ -159,7 +159,7 @@ footer {
 
 
 /* ========================
-   PROJECTS (Nueva Sección)
+   PROJECTS 
    ======================== */
    #projects {
     background-color: #282828;
@@ -219,14 +219,14 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Invertir orden (proyecto alternado) */
+/* Invertir orden */
 .project-item.reverse {
     flex-direction: row-reverse;
 }
 
 
 /* ========================
-   HOBBIES (Nueva Sección)
+   HOBBIES 
    ======================== */
    #hobbies {
     background-color: #242424;
@@ -286,22 +286,9 @@ footer {
     color: #e0e0e0;
 }
 
-/* ========================
-   RESPONSIVE DESIGN
-   ======================== */
-@media (max-width: 768px) {
-    .hobbies-grid {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
-    }
-
-    #hobbies {
-        padding: 40px 10px;
-    }
-}
-
 
 /* ========================
-   CONTACT ME (Nueva Sección)
+   CONTACT ME 
    ======================== */
    #contact {
     background-color: #2a2a2a;
@@ -386,16 +373,113 @@ footer {
 }
 
 /* ========================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (MÓVILES Y TABLETS)
    ======================== */
-@media (max-width: 768px) {
-    .contact-items {
+
+   @media (max-width: 1024px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* HEADER - MENÚ RESPONSIVE */
+    header {
         flex-direction: column;
+        height: auto;
+        padding: 10px;
         align-items: center;
     }
 
-    #contact {
-        padding: 40px 10px;
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        display: none; 
+    }
+
+    .nav-list.show {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #bb86fc;
     }
 }
 
+/* ABOUT ME - SECCIÓN RESPONSIVE */
+@media (max-width: 768px) {
+    #about-me {
+        width: 100%;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-me aside {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #about-me .aside-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio-box {
+        width: 90%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+/*PROJECTS - SECCIÓN RESPONSIVE*/
+@media (max-width: 768px) {
+    #projects {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .project-item {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-text,
+    .project-image {
+        width: 100%;
+    }
+
+    .project-item.reverse {
+        flex-direction: column !important; 
+    }
+}
+
+/*HOBBIES - SECCIÓN RESPONSIVE*/
+@media (max-width: 768px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/*CONTACT ME - SECCIÓN RESPONSIVE*/
+@media (max-width: 768px) {
+    .contact-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 90%;
+    }
+}
